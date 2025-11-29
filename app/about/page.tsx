@@ -155,7 +155,7 @@ export default function AboutPage() {
                             {/* Image */}
                             <div className="story-image relative h-[400px] rounded-lg overflow-hidden shadow-xl">
                                 <Image
-                                    src="/black.jpg"
+                                    src="/bri.jpg"
                                     alt="Our Story"
                                     fill
                                     className="object-cover"
@@ -178,7 +178,7 @@ export default function AboutPage() {
                             {/* Large Image */}
                             <div className="team-gallery-item col-span-2 row-span-2 relative h-[500px] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <Image
-                                    src="/team-1.jpg"
+                                    src="/team1.jpg"
                                     alt="Professional ushering team"
                                     fill
                                     className="object-cover"
@@ -198,7 +198,7 @@ export default function AboutPage() {
                             {/* Small Image 1 */}
                             <div className="team-gallery-item relative h-60 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <Image
-                                    src="/team-2.jpg"
+                                    src="/team2.jpg"
                                     alt="Usher welcoming guests"
                                     fill
                                     className="object-cover"
@@ -208,7 +208,7 @@ export default function AboutPage() {
                             {/* Small Image 2 */}
                             <div className="team-gallery-item relative h-60 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <Image
-                                    src="/team-3.jpg"
+                                    src="/team3i.jpg"
                                     alt="Team coordination"
                                     fill
                                     className="object-cover"
@@ -218,7 +218,7 @@ export default function AboutPage() {
                             {/* Medium Image */}
                             <div className="team-gallery-item col-span-2 relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <Image
-                                    src="/team-4.jpg"
+                                    src="/team4.jpg"
                                     alt="Event service"
                                     fill
                                     className="object-cover"
@@ -228,7 +228,7 @@ export default function AboutPage() {
                             {/* Small Image 3 */}
                             <div className="team-gallery-item relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <Image
-                                    src="/team-5.jpg"
+                                    src="/team5.jpg"
                                     alt="Professional service"
                                     fill
                                     className="object-cover"
@@ -299,7 +299,7 @@ export default function AboutPage() {
                             <div className="leader-card group">
                                 <div className="relative h-80 mb-6 rounded-lg overflow-hidden shadow-lg">
                                     <Image
-                                        src="/leader-1.jpg"
+                                        src="/lead1.jpg"
                                         alt="Founder & CEO"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -321,7 +321,7 @@ export default function AboutPage() {
                             <div className="leader-card group">
                                 <div className="relative h-80 mb-6 rounded-lg overflow-hidden shadow-lg">
                                     <Image
-                                        src="/leader-2.jpg"
+                                        src="/lead2.jpg"
                                         alt="Co-Founder & Operations Director"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-300"

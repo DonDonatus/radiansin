@@ -119,7 +119,7 @@ export default function ContactPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
             {/* Champagne Gold Glow Effect */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-[#D4AF37]/20 rounded-full blur-[150px]" />
@@ -134,7 +134,7 @@ export default function ContactPage() {
                             Get in Touch
                         </h1>
                         <div className="w-24 h-[1px] bg-[#D4AF37] mx-auto mb-6"></div>
-                        <p className={`${lora.className} text-white/70 max-w-2xl mx-auto text-base`} style={{ lineHeight: '1.6' }}>
+                        <p className={`${lora.className} text-gray-700 dark:text-white/70 max-w-2xl mx-auto text-base`} style={{ lineHeight: '1.6' }}>
                             Ready to make your event unforgettable? Contact us today
                         </p>
                     </div>
@@ -143,8 +143,8 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                         {/* Contact Form - Shows first on mobile, left on desktop */}
                         <div className="order-1">
-                            <div className="p-8 sm:p-10 rounded-lg bg-white/5 border border-white/10 shadow-xl">
-                                <h2 className={`${playfair.className} text-2xl sm:text-3xl font-light mb-6 text-white`}>
+                            <div className="p-8 sm:p-10 rounded-lg bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 shadow-xl">
+                                <h2 className={`${playfair.className} text-2xl sm:text-3xl font-light mb-6 text-gray-900 dark:text-white`}>
                                     Send us a Message
                                 </h2>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     {/* Name */}
                                     <div>
-                                        <label htmlFor="name" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="name" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Full Name *
                                         </label>
                                         <input
@@ -190,14 +190,14 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             required
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
                                             placeholder="Your name"
                                         />
                                     </div>
 
                                     {/* Email */}
                                     <div>
-                                        <label htmlFor="email" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="email" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Email Address *
                                         </label>
                                         <input
@@ -208,14 +208,14 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             required
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
                                             placeholder="your.email@example.com"
                                         />
                                     </div>
 
                                     {/* Phone */}
                                     <div>
-                                        <label htmlFor="phone" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="phone" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Phone Number *
                                         </label>
                                         <input
@@ -226,14 +226,14 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             required
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
                                             placeholder="+233 XX XXX XXXX"
                                         />
                                     </div>
 
                                     {/* Event Date */}
                                     <div>
-                                        <label htmlFor="eventDate" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="eventDate" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Event Date
                                         </label>
                                         <input
@@ -243,36 +243,36 @@ export default function ContactPage() {
                                             value={formData.eventDate}
                                             onChange={handleChange}
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
                                         />
                                     </div>
 
                                     {/* Event Type */}
                                     <div>
-                                        <label htmlFor="eventType" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="eventType" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Event Type *
                                         </label>
                                         <select
                                             id="eventType"
                                             name="eventType"
                                             value={formData.eventType}
-                                            onChange={handleChange}
+                            onChange={handleChange}
                                             required
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-[#D4AF37] transition-colors disabled:opacity-50 disabled:cursor-not-allowed`}
                                         >
-                                            <option value="" className="bg-black">Select event type</option>
-                                            <option value="wedding" className="bg-black">Wedding</option>
-                                            <option value="corporate" className="bg-black">Corporate Event</option>
-                                            <option value="gala" className="bg-black">Gala & Celebration</option>
-                                            <option value="private" className="bg-black">Private Function</option>
-                                            <option value="other" className="bg-black">Other</option>
+                                            <option value="" className="bg-white dark:bg-black">Select event type</option>
+                                            <option value="wedding" className="bg-white dark:bg-black">Wedding</option>
+                                            <option value="corporate" className="bg-white dark:bg-black">Corporate Event</option>
+                                            <option value="gala" className="bg-white dark:bg-black">Gala & Celebration</option>
+                                            <option value="private" className="bg-white dark:bg-black">Private Function</option>
+                                            <option value="other" className="bg-white dark:bg-black">Other</option>
                                         </select>
                                     </div>
 
                                     {/* Message */}
                                     <div>
-                                        <label htmlFor="message" className={`${lora.className} block text-white text-sm mb-2`}>
+                                        <label htmlFor="message" className={`${lora.className} block text-gray-900 dark:text-white text-sm mb-2`}>
                                             Message
                                         </label>
                                         <textarea
@@ -282,13 +282,13 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             rows={5}
                                             disabled={isSubmitting}
-                                            className={`${lora.className} w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed`}
+                                            className={`${lora.className} w-full px-4 py-3 bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:outline-none focus:border-[#D4AF37] transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed`}
                                             placeholder="Tell us about your event..."
                                         />
                                     </div>
 
                                     {/* Privacy Notice */}
-                                    <p className={`${lora.className} text-white/50 text-xs`} style={{ lineHeight: '1.6' }}>
+                                    <p className={`${lora.className} text-gray-500 dark:text-white/50 text-xs`} style={{ lineHeight: '1.6' }}>
                                         By submitting this form, you agree to our Privacy Policy and consent to be contacted regarding your inquiry.
                                     </p>
 
@@ -296,11 +296,11 @@ export default function ContactPage() {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className={`${lora.className} w-full px-8 py-4 bg-white text-black font-medium rounded-lg text-base hover:bg-[#D4AF37] hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2`}
+                                        className={`${lora.className} w-full px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-black font-medium rounded-lg text-base hover:bg-[#D4AF37] hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2`}
                                     >
                                         {isSubmitting ? (
                                             <>
-                                                <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <svg className="animate-spin h-5 w-5 text-white dark:text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                                 </svg>
@@ -316,7 +316,7 @@ export default function ContactPage() {
 
                         {/* Testimonials - Shows second on mobile, right on desktop */}
                         <div className="order-2">
-                            <h2 className={`${playfair.className} text-2xl sm:text-3xl font-light mb-6 text-white`}>
+                            <h2 className={`${playfair.className} text-2xl sm:text-3xl font-light mb-6 text-gray-900 dark:text-white`}>
                                 What Our Clients Say
                             </h2>
                             
@@ -324,7 +324,7 @@ export default function ContactPage() {
                                 {testimonials.map((testimonial, index) => (
                                     <div
                                         key={index}
-                                        className="p-6 rounded-lg bg-white/5 border border-white/10 hover:border-[#D4AF37] transition-all duration-300 shadow-sm hover:shadow-md"
+                                        className="p-6 rounded-lg bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-[#D4AF37] transition-all duration-300 shadow-sm hover:shadow-md"
                                     >
                                         {/* Stars */}
                                         <div className="flex gap-1 mb-3">
@@ -336,7 +336,7 @@ export default function ContactPage() {
                                         </div>
 
                                         {/* Testimonial Text */}
-                                        <p className={`${lora.className} text-white/70 text-sm mb-4`} style={{ lineHeight: '1.6' }}>
+                                        <p className={`${lora.className} text-gray-700 dark:text-white/70 text-sm mb-4`} style={{ lineHeight: '1.6' }}>
                                             "{testimonial.text}"
                                         </p>
 
@@ -348,10 +348,10 @@ export default function ContactPage() {
                                                 </span>
                                             </div>
                                             <div>
-                                                <h4 className={`${playfair.className} text-white font-semibold text-sm`}>
+                                                <h4 className={`${playfair.className} text-gray-900 dark:text-white font-semibold text-sm`}>
                                                     {testimonial.name}
                                                 </h4>
-                                                <p className={`${lora.className} text-white/50 text-xs`}>
+                                                <p className={`${lora.className} text-gray-500 dark:text-white/50 text-xs`}>
                                                     {testimonial.role}
                                                 </p>
                                             </div>

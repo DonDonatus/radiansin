@@ -25,7 +25,7 @@ const galleryImages = [
     { id: 5, src: '/card5.jpg', alt: 'Event Gallery 5' },
     { id: 6, src: '/card6.jpg', alt: 'Event Gallery 6' },
     { id: 7, src: '/card7.jpg', alt: 'Event Gallery 7' },
-    { id: 8, src: '/gallery-8.jpg', alt: 'Event Gallery 8' },
+    { id: 8, src: '/card8.jpg', alt: 'Event Gallery 8' },
 ];
 
 export default function GalleryPage() {
