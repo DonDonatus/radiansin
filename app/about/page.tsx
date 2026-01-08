@@ -310,7 +310,7 @@ export default function AboutPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <h3 className={`${playfair.className} text-xl font-semibold text-white mb-1`}>Hanson Bernice</h3>
+                                <h3 className={`${playfair.className} text-xl font-semibold text-white mb-1`}>Rod White</h3>
                                 <p className={`${lora.className} text-[#D4AF37] text-sm mb-2`}>Founder & CEO</p>
                                 <p className={`${lora.className} text-white/60 text-sm`} style={{ lineHeight: '1.6' }}>
                                     Visionary leader dedicated to revolutionizing event services with professionalism and elegance.
@@ -332,7 +332,7 @@ export default function AboutPage() {
                                         </p>
                                     </div>
                                 </div>
-                                <h3 className={`${playfair.className} text-xl font-semibold text-white mb-1`}>Lois Okyere</h3>
+                                <h3 className={`${playfair.className} text-xl font-semibold text-white mb-1`}>Beanca Need</h3>
                                 <p className={`${lora.className} text-[#D4AF37] text-sm mb-2`}>Co-Founder & Operations Director</p>
                                 <p className={`${lora.className} text-white/60 text-sm`} style={{ lineHeight: '1.6' }}>
                                     Expert in event management ensuring every detail is executed to perfection.
